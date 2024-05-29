@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XSS Attack Demos</title>
+  <!-- Link to external CSS files -->
+  <link rel="stylesheet" href="DOM-Based/xss.css">
+  <link rel="stylesheet" href="stored-XSS/style.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Inline styles -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #444;
+      margin-top: 40px;
+    }
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #555;
+      font-size: 18px;
+    }
+    nav ul li a:hover {
+      color: #777;
+    }
+    .demo-intro {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .demo-intro h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .demo-intro p {
+      color: #666;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to XSS Attack Demos</h1>
+  <nav>
+    <ul>
+      <li><a href="DOM-Based/mainpage.html">DOM-Based XSS Demo</a></li>
+      <li><a href="reflective xss/project.html">Reflected XSS Demo</a></li>
+      <li><a href="stored-XSS/index.html">Stored XSS Demo</a></li>
+    </ul>
+  </nav>
+
+  <section class="demo-intro">
+    <h2>About XSS</h2>
+    <p>XSS (Cross-Site Scripting) is a vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users.</p>
+  </section>
+
+  <footer>
+    <p>Created by US &copy; 2024</p>
+  </footer>
+
+  <!-- Link to external JavaScript file -->
+  <script src="DOM-Based/script.js" defer></script>
+  <script src="stored-XSS/app.js" defer></script>
+</body>
+</html>
+
+<!--DOM  <button onclick="document.body.style.backgroundColor = 'violet'">Click Here </button>                  -->
+<!-- stored some-page.com/no-image.jpg" onerror ="alert('Hacked!')"  -->
+<!--   reflective        <script>alert("reflective xss attack");</script>  -->

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza House</title>
+    <link rel="stylesheet" href="xss.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="PH">
+        <div class="heading">Pizza House Order System</div>
+        <div class="line1"></div>
+        <div class="name">
+          Customer Name: &nbsp;
+          <input type="text" name="name" class="name" id="name" />
+        </div>
+        <div class="line"></div>
+
+        <div class="dropdown">
+          <div class="label">Pizza Flavor: &nbsp;&nbsp;</div>
+          <select name="flavor" id="flavor">
+            <option value="">Select Flavor</option>
+            <option value="Pepperoni">Pepperoni</option>
+            <option value="Margherita">Margherita</option>
+            <option value="Supreme">Supreme</option>
+            <option value="Vegetarian">Vegetarian</option>
+          </select>
+        </div>
+
+        <div class="sub">
+          <button type="submit" onclick="placeOrder()">Place Order</button>
+        </div>
+        <!-- Container for displaying orders -->
+        <div id="orders"></div>
+      </div>
+    </div>
+
+    <!-- <script>
+      document.body.style.backgroundColor = "blue";
+    </script> -->
+    <script src="script.js"></script>
+  </body>
+</html>

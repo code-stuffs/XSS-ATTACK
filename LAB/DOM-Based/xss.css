@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+  color: blue; /* orange-red */
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.PH {
+  background-color: #ffffff; /* white */
+  border: 2px solid #dddddd; /* light gray */
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto; /* Center horizontally */
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.name,
+.dropdown,
+.sub {
+  margin-bottom: 20px;
+}
+
+.name input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #cccccc; /* light gray */
+  transition: border-color 0.3s ease;
+}
+
+.name input:focus {
+  border-color: lightblue /* orange-red */
+}
+
+.dropdown select {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #cccccc; /* light gray */
+  background-color: #ffffff; /* white */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.dropdown select:focus {
+  border-color:lightblue /* orange-red */
+  outline: none;
+}
+
+.sub button {
+  width: 100%;
+  padding: 12px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: lightblue /* orange-red */
+  color: #ffffff; /* white */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sub button:hover {
+  background-color: lightblue /* lighter orange-red */
+}

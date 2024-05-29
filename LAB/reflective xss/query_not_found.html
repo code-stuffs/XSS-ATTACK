@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #ffc0cb;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+        h1 {
+            color: #ff1493; 
+        }
+        p {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            width: 300px; 
+            margin-bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <img src="query.jpeg" alt="Query Image">
+    <div class="container">
+        <h1>We're Sorry, Query Not Found</h1>
+        <p id="queryMessage"></p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var queryString = window.location.search;
+            var urlParams = new URLSearchParams(queryString);
+            var query = urlParams.get('query');
+
+            var queryMessage = document.getElementById('queryMessage');
+            if (query) {
+                queryMessage.textContent = "The search query you entered was: " + query;
+            } else {
+                queryMessage.textContent = "No search query was provided.";
+            }
+        });
+    </script>
+</body>
+</html>
